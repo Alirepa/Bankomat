@@ -19,11 +19,11 @@ namespace Bankomat
         {
             if (amount <= 0)
             {
-                throw new ArgumentException("Amount must be positive");
+                Console.WriteLine("Amount must be greater than 0");
                 return;
             }
             balance += amount;
-            Console.WriteLine($"Deposited: {amount} sek, New Balance: {Balance} sek");
+            //Console.WriteLine($"Deposited: {amount} sek, New Balance: {Balance} sek");
         }
 
         public void Withdraw(decimal amount) 
@@ -40,7 +40,7 @@ namespace Bankomat
             }
 
             balance -= amount;
-            Console.WriteLine($"You withdrawled {amount} sek, New balance : {Balance} sek");
+            Console.WriteLine($"You withdrawed {amount} sek, New balance: {Balance} sek");
         }
     }
 }
