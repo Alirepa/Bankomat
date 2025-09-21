@@ -15,6 +15,10 @@ namespace Bankomat
         get { return balance; }
         }
 
+        public BankAccount() 
+        {
+            balance = 1000;
+        }
         public void Deposit(decimal amount)
         {
             if (amount <= 0)
@@ -24,7 +28,8 @@ namespace Bankomat
             }
             balance += amount;
             //Console.WriteLine($"Deposited: {amount} sek, New Balance: {Balance} sek");
-        }
+            //behöver inte använda då det skriver ut hur mycket man har i balance så om man vill hålla det privat, man kan kolla genom att trycka på 3(check balance)
+        }        
 
         public void Withdraw(decimal amount) 
         {
@@ -40,7 +45,8 @@ namespace Bankomat
             }
 
             balance -= amount;
-            Console.WriteLine($"You withdrawed {amount} sek, New balance: {Balance} sek");
+            //Console.WriteLine($"You withdrawed {amount} sek, New balance: {Balance} sek");
+            //behöver inte använda då det skriver ut hur mycket man har i balance så om man vill hålla det privat, man kan kolla genom att trycka på 3(check balance)
         }
     }
 }

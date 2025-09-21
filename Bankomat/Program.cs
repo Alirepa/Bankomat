@@ -27,7 +27,7 @@ namespace Bankomat
             bool exit = false;
             while (!exit)
             {
-                
+                Console.WriteLine("-----Main Menu-----");
                 Console.WriteLine("1. Depoiste money");
                 Console.WriteLine("2. Withdraw money");
                 Console.WriteLine("3. Check balance");
