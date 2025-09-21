@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Bankomat
 {
-    internal class Person
+    public class Person
     {
+        public string Name { get; }
+        public string PersonlNumber { get; }
+
+        public Person(string name, string personlNumber)
+        {
+            Name = name;
+            PersonlNumber = personlNumber;
+        }
     }
 }
